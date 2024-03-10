@@ -1,0 +1,16 @@
+spring:
+ h2:
+  console:
+   enabled: true
+ datasource:
+  url: jdbc:h2:mem:cinemille-db
+  username: sa
+  password: sa
+ jpa:
+  defer-datasource-initialization: true   
+  hibernate:
+   ddl-auto: create-drop
+   show-sql: true
+  properties:
+   hibernate:
+    format_sql: true
